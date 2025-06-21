@@ -19,7 +19,6 @@ body{
 
 .header{
     display: flex;
-    border: 1px solid red;
     height: fit-content;
     flex-direction: column;
 }
@@ -35,7 +34,7 @@ body{
     justify-content: space-between;
     align-items: center;
     height: 100%;
-    background-color: rgb(153, 198, 228);
+    background-color: rgb(56, 137, 172);
     color: rgb(255, 255,255);
 }
 
@@ -87,8 +86,48 @@ body{
     flex-flow: column nowrap;
 }
 
-.main > .descargar-app{
+.main > .inicio{
+    display: flex;
+    text-align: center;
+    background-color: rgb(199, 199, 199);
+}
+
+.main > .inicio > .tarjeta{
+     display: flex;
+     flex-flow: column nowrap;
+     text-align: center;
+     align-items: center;
+}
+
+.main > .inicio > .tarjeta > .tarjeta-titulo{
+    color: rgb(56, 137, 172);
+}
+
+
+.main > .inicio > .tarjeta > .tarjeta-imagen{
+    height: 100%;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.main > .inicio > .tarjeta > .tarjeta-imagen > img{
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    width: 180px;
+    height: auto;
+    box-shadow: 0px 0px 30px #000;
+}
+
+
+.main > .descargar-app, .footer{
     text-align: center;
     background-color: #000;
     color: #fff;
+}
+
+.main > .registro{
+    background-color: rgb(32, 37, 37);
 }
