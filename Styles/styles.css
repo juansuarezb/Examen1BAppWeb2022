@@ -17,6 +17,11 @@ body{
     height: 100vh;
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
 .header{
     display: flex;
     height: fit-content;
@@ -59,6 +64,7 @@ body{
     width: 100%;
     justify-content: space-between;
     align-items: center;
+    flex-direction: column;
 }
 
 .nav-principal >.nav-principal-izquierda > .PetShop{
@@ -72,8 +78,6 @@ body{
 }
 
 .lista-menu > li > a{
-    text-decoration: none;
-    color: inherit;
     margin-inline: 5px;
 }
 
@@ -134,8 +138,63 @@ body{
     color: #fff;
 }
 
+
+.main> .descargar-app > .botones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.main> .descargar-app >.botones > .boton-app{
+    background-color: rgb(56, 137, 172);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px 10px 10px 10px;
+    width: 100%;
+    max-width: 300px;
+}
+
 .main > .registro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: rgb(116, 116, 116);
+    padding-bottom: 40px;
+}
+
+
+.info-registro{
+    color: rgb(56, 137, 172);
+    text-align: center;
+}
+.formulario > input{
+    display: block;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    font-size: 1rem;
+}
+
+.contenedor-registro{ 
+    display: flex;
+    gap: 10px;
+}
+
+.footer{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.footer > p{
+    margin: 10px auto;
 }
 
 @media (min-width: 768px){
@@ -147,5 +206,9 @@ body{
 
     .main > .inicio > .tarjeta{
         width: 40%;
+    }
+
+    .header > .nav-principal{
+        flex-direction: row;
     }
 }
