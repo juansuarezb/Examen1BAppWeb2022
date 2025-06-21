@@ -4,6 +4,7 @@
 
 html{
     scroll-behavior: smooth;
+    font-family: 'Merriweather', serif;
 }
 
 body{
@@ -43,6 +44,13 @@ a{
     color: rgb(255, 255,255);
 }
 
+.nav-inicio-izquierda > .nav-inicio-izquierda-correo{
+    margin-inline: 10px;
+}
+
+.nav-inicio-izquierda-correo > a{
+    display: block;
+}
 
 .nav-inicio-derecha{
     display: flex;
@@ -59,16 +67,9 @@ a{
     margin-right: 10px;
 }
 
-.header > .nav-principal{
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-}
 
 .nav-principal >.nav-principal-izquierda > .PetShop{
-    display: flex;
+    text-align: center;
 }
 
 .nav-principal > .nav-principal-derecha > .lista-menu{
@@ -172,16 +173,72 @@ a{
     color: rgb(56, 137, 172);
     text-align: center;
 }
+
+.formulario {
+  width: 100%;
+  max-width: 500px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.grupo-formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.grupo-formulario label {
+  font-weight: bold;
+  color: #fff;
+}
+
 .formulario > input{
     display: block;
 }
 
+
 .formulario input[type="text"],
 .formulario input[type="email"] {
-    width: 100%;
-    padding: 8px;
-    font-size: 1rem;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
 }
+
+.formulario input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.formulario .condiciones {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.formulario input[type="submit"] {
+  color: rgb(17, 17, 17);
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+.nota-campos {
+  font-size: 0.9rem;
+  color: #eee;
+}
+
+.imagen-formulario img {
+  max-width: 250px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
 
 .contenedor-registro{ 
     display: flex;
@@ -210,5 +267,16 @@ a{
 
     .header > .nav-principal{
         flex-direction: row;
+    }
+
+    .nav-principal{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-principal-izquierda > .PetShop{
+        margin-left: 10px;
     }
 }

@@ -11,6 +11,10 @@
     <meta name="author" content="Juan Suárez" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="Styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans"
+    />
     <script
       src="https://kit.fontawesome.com/5b8e70c453.js"
       crossorigin="anonymous"
@@ -21,7 +25,7 @@
       <div class="nav-inicio">
         <nav class="nav-inicio-izquierda">
           <p class="nav-inicio-izquierda-correo">
-            <a href="http://">info@pets.com.ec</a> |
+            <a href="http://">info@pets.com.ec</a>
             <a href="http://">Ll&aacute;manos al 022999000</a>
           </p>
         </nav>
@@ -116,15 +120,40 @@
             <img src="https://picsum.photos/id/237/200/300" alt="" />
           </div>
           <form class="formulario" action="#" method="POST">
-            <input type="text" name="nombre" id="nombre" />
-            <input type="email" name="email" id="email" />
-            <input type="text" name="nombreMascota" id="nombreMascota" />
-            <input type="checkbox" name="condiciones" id="condiciones" /><label
-              for="condiciones"
-              >Acepto la pol&iacute;tica de Privacidad</label
-            >
+            <div class="grupo-formulario">
+              <label for="nombre">Nombre completo*</label>
+              <input type="text" name="nombre" id="nombre" required />
+            </div>
+
+            <div class="grupo-formulario">
+              <label for="email">Correo electr&oacute;nico*</label>
+              <input type="email" name="email" id="email" required />
+            </div>
+
+            <div class="grupo-formulario">
+              <label for="nombreMascota">Nombre de tu mascota*</label>
+              <input
+                type="text"
+                name="nombreMascota"
+                id="nombreMascota"
+                required
+              />
+            </div>
+
+            <div class="grupo-formulario condiciones">
+              <input
+                type="checkbox"
+                name="condiciones"
+                id="condiciones"
+                required
+              />
+              <label for="condiciones"
+                >Acepto la pol&iacute;tica de privacidad*</label
+              >
+            </div>
+
             <input type="submit" value="Contactar" />
-            <p>*Campos Obligatorios</p>
+            <p class="nota-campos">*Campos obligatorios</p>
           </form>
         </div>
       </section>
