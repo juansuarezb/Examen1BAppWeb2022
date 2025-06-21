@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    display: grid;
+    min-height: 100dvh;
+    grid-template-rows: auto 1fr auto;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.header{
+    display: flex;
+    border: 1px solid red;
+    height: fit-content;
+    flex-direction: column;
+}
+
+.header, .main, .footer{
+    width: 100%;
+}
+
+.header > .nav-inicio{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    background-color: rgb(153, 198, 228);
+    color: rgb(255, 255,255);
+}
+
+
+.nav-inicio-derecha{
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.nav-inicio-derecha i{
+    font-size: 1.5rem;
+    margin-left: 10px;
+
+}
+
+.nav-inicio-derecha i:last-child{
+    margin-right: 10px;
+}
+
+.header > .nav-principal{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-principal >.nav-principal-izquierda > .PetShop{
+    display: flex;
+}
+
+.nav-principal > .nav-principal-derecha > .lista-menu{
+    display: flex;
+    list-style: none;
+    flex-flow: row wrap;
+}
+
+.lista-menu > li > a{
+    text-decoration: none;
+    color: inherit;
+    margin-inline: 5px;
+}
+
+.lista-menu > li > a:last-child{
+    margin-right: 10px;
+}
+
+.main { 
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.main > .descargar-app{
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+}
