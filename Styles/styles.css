@@ -233,6 +233,12 @@ a{
   color: #eee;
 }
 
+.imagen-formulario {
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+}
+
 .imagen-formulario img {
   max-width: 250px;
   border-radius: 10px;
@@ -240,9 +246,10 @@ a{
 }
 
 
-.contenedor-registro{ 
-    display: flex;
-    gap: 10px;
+.contenedor-registro {
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .footer{
@@ -279,4 +286,10 @@ a{
     .nav-principal-izquierda > .PetShop{
         margin-left: 10px;
     }
+
+    .contenedor-registro {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+  }
 }
